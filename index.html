@@ -4,43 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jean Marc Essis | WDD 130</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Jean Marc Essis</title>
     <meta name="description"
-      content="My first HTML page about me taking WDD130 class and learning Web Programing">
+      content="WDD 131 – Dynamic Web Fundamentals | Jean Marc Essis | HTML, CSS, JavaScript web development fundamentals page">
     <meta name="author" content="Jean Marc Essis">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
+
     <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
         <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Website</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+              target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
         </nav>
     </header>
+
     <main>
-        <h1>Jean Marc Essis | WDD 130</h1>
-        <img src="images/profile.jpg" alt="Jean Marc Essis.">
-        <p>Hello everyone! My name is Essis, and I am from Ivory Coast. I have a
-            Master’s degree in Criminology and a Bachelor’s degree in Business Management
-            from BYU-Idaho. I am currently working on another Bachelor’s degree in Software
-            Development. I enjoy keeping myself busy learning and discovering new things.
-            I love dancing, cooking, and playing football in my free time.</p>
+        <h1>Jean Marc Essis</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/jeanm.jpg" alt="My profile picture">
+            <p>
+                I am a student learning web development. I enjoy coding, solving problems,
+                and building creative digital solutions.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>My Interests</h2>
+            <img src="images/rafting3.jpg" alt="Coding image">
+            <p>
+                I am passionate about technology, programming, and continuous learning.
+                I aim to become a skilled developer and create impactful applications.
+            </p>
+        </section>
     </main>
-    <aside>
-        <h2>Ivory Coast</h2>
-        <img src="images/abidjan.jpg" alt="Abidjan City.">
-        <p>Ivory Coast (officially Côte d'Ivoire) is a West African nation on the Gulf of Guinea,
-            known as the
-            world's leading producer of cocoa and cashew nuts. With a population of over 34 million,
-            it is a
-            culturally diverse republic with French as the official language. While its economic
-            capital is the
-            vibrant port city of Abidjan, the political capital is Yamoussoukro.</p>
-    </aside>
+
     <footer>
-        <p>©2025 ‖ Jean Marc Essis ‖ Abidjan, coco beach🐧</p>
+        <p>
+            &copy; <span id="currentyear"></span> Jean Marc Essis, Côte d'Ivoire
+        </p>
+        <p id="lastModified"></p>
     </footer>
+
 </body>
 
 </html>
