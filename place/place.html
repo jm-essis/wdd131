@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Ghana - The Gateway to Africa">
+    <meta name="author" content="Brother Essis">
+
+    <title>Ghana | Country Page</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ghana 🇬🇭</h1>
+    </header>
+
+    <main>
+
+        <picture>
+            <source srcset="images/ghana-large.webp" media="(min-width: 768px)">
+            <img src="images/ghana-small.webp" alt="Beautiful view of Ghana">
+        </picture>
+
+        <section class="card">
+            <h2>Data</h2>
+
+            <p><strong>Area:</strong> 238,535 sq km</p>
+            <p><strong>Population:</strong> 34 Million</p>
+            <p><strong>Capital:</strong> Accra</p>
+            <p><strong>Languages:</strong> English, Twi, Ga, Ewe</p>
+            <p><strong>Currency:</strong> Ghana Cedi</p>
+            <p><strong>Time Zone:</strong> GMT</p>
+            <p><strong>Calling Code:</strong> +233</p>
+            <p><strong>Internet TLD:</strong> .gh</p>
+        </section>
+
+        <section class="card weather">
+            <h2>Weather</h2>
+
+            <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+
+            <p><strong>Temperature:</strong> <span id="temperature">28</span> °C</p>
+            <p><strong>Conditions:</strong> Sunny</p>
+            <p><strong>Wind:</strong> <span id="windSpeed">10</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span> | Brother Essis | Ghana
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

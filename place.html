@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W03 Assignment: Country Page</title>
+    <meta name="description" content="Ivory Coast specific place.">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ivory Coast</h1>
+    </header>
+
+    <main>
+        <picture class="hero">
+            <source media="(min-width: 800px)" srcset="images/abidjanci.jpg">
+            <img src="images/hero-small.webp" alt="Scenic view of Ivory Coast wildlife"
+              loading="lazy">
+        </picture>
+
+        <section class="card data-card">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 322,462 sq km</li>
+                <li><strong>Population:</strong> 33,398,753</li>
+                <li><strong>Capital:</strong> Abidjan</li>
+                <li><strong>Languages:</strong> French</li>
+                <li><strong>Currency:</strong> Franc CFA</li>
+                <li><strong>Time Zone:</strong> UTC+0</li>
+                <li><strong>Calling Code:</strong> +225</li>
+                <li><strong>Internet TLD:</strong> .ci</li>
+            </ul>
+        </section>
+
+        <section class="card weather-card">
+            <h2>Weather</h2>
+            <div class="weather-icon-container">
+                <svg class="mobile-weather-icon" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24" width="48" height="48" fill="currentColor">
+                    <path
+                      d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM6.16 5.1a.75.75 0 011.06 0l1.59 1.59a.75.75 0 11-1.06 1.06L6.16 6.16a.75.75 0 010-1.06zm11.68 0a.75.75 0 010 1.06l-1.59 1.59a.75.75 0 11-1.06-1.06l1.59-1.59a.75.75 0 011.06 0zM12 6.75a5.25 5.25 0 100 10.5 5.25 5.25 0 000-10.5z" />
+                </svg>
+            </div>
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temp">10</span>°C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> <span id="wind">5</span> km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Jean Marc Essis | Abidjan</p>
+        <p class="last-modified">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
