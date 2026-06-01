@@ -1,0 +1,129 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+header h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    margin: 0 0 0.5rem 0;
+}
+
+#menuBtn {
+    display: block;
+    margin: 10px auto;
+    font-size: 1.5rem;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #555;
+    color: #ffd700;
+    /* Subtle gold accent indicator for active selection */
+}
+
+/* Show menu when active */
+nav.open {
+    display: flex;
+}
+
+main {
+    max-width: 1200px;
+    /* Expanded out from 600px to look proper on wide view arrays */
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    text-align: center;
+    color: #222;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+/* 6. Formatted Temple Card Box Designs */
+.temple-card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    margin: 0;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /* Align text metadata cleanly */
+}
+
+.temple-card figcaption h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    margin: 0 0 0.75rem 0;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+.temple-card figcaption p {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    /* Ensures aspect ratio remains correct across cards */
+    border-radius: 4px;
+    margin-top: auto;
+    /* Standardizes image baseline placement */
+    background-color: #eaeaea;
+    /* Lazy loading structural fallback canvas shadow */
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.4rem 0;
+}
