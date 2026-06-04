@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrails | Join a Cleanup Crew</title>
+    <meta name="description"
+      content="This is my temple page that present a Picture Album Enhancement">
+    <meta name="author" content="Jean Marc Essis">
+</head>
+
+<body>
+
+    <header>
+        <h1>Volunteer Registration</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+
+            <div class="form-group">
+                <label for="trail-region">Select Target Region:</label>
+                <select id="trail-region" name="region" required>
+                    <option value="" disabled selected>Choose a region...</option>
+                    <option value="north">North Woods District</option>
+                    <option value="south">South Coastline</option>
+                    <option value="east">East Mountain Ridges</option>
+                </select>
+            </div>
+
+            <fieldset>
+                <legend>Rate Your Hiking Experience Level (1 = Novice, 5 = Expert):</legend>
+
+                <label><input type="radio" name="experience" value="1" required> 1</label>
+                <label><input type="radio" name="experience" value="2"> 2</label>
+                <label><input type="radio" name="experience" value="3"> 3</label>
+                <label><input type="radio" name="experience" value="4"> 4</label>
+                <label><input type="radio" name="experience" value="5"> 5</label>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="cleanup-date">Preferred Shift Date:</label>
+                <input type="date" id="cleanup-date" name="shiftDate" required>
+            </div>
+
+            <fieldset>
+                <legend>Gear/Interests (Select all that apply):</legend>
+
+                <label><input type="checkbox" name="interests" value="cleanup"> Trail
+                    Cleanup</label>
+                <label><input type="checkbox" name="interests" value="mapping"> GPS Trail
+                    Mapping</label>
+                <label><input type="checkbox" name="interests" value="safety"> First Aid
+                    Certified</label>
+                <label><input type="checkbox" name="interests" value="heavy"> Heavy Lifting
+                    Capable</label>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="notes">Special Requirements / Dietary Restrictions:</label>
+                <textarea id="notes" name="userNotes" rows="4" cols="40"
+                  placeholder="Let us know if you have any medical conditions, allergies, or physical restrictions..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit Registration</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EcoTrails Explorer</p>
+    </footer>
+
+</body>
+
+</html>
