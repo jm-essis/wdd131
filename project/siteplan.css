@@ -1,0 +1,123 @@
+/* SITE PLAN COLOR SCHEMA Variables */
+:root {
+    --primary-color: #2c5e43;     /* Deep Forest Green */
+    --secondary-color: #4f772d;   /* Moss Green */
+    --accent-color: #e9c46a;      /* Warm Sand/Gold */
+    --text-color: #333333;        /* Dark Charcoal */
+    --bg-color: #f8f9fa;          /* Off-White */
+    --card-bg: #ffffff;           /* Pure White */
+}
+
+/* TYPOGRAPHY CONFIGURATION */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: var(--secondary-color);
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Color Palette Display Grid */
+.color-palette {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.color-box {
+    flex: 1;
+    min-width: 150px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.primary-box { background-color: var(--primary-color); }
+.secondary-box { background-color: var(--secondary-color); }
+.accent-box { background-color: var(--accent-color); color: #333; text-shadow: none; }
+.bg-box { background-color: var(--bg-color); color: #333; text-shadow: none; border: 1px solid #ddd; }
+
+/* Wireframe Simulation Placeholders */
+.wireframe-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+    .wireframe-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.wireframe {
+    border: 2px dashed #999;
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.wf-block {
+    background: #ddd;
+    border: 1px solid #bbb;
+    padding: 10px;
+    margin: 8px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.wf-flex {
+    display: flex;
+    gap: 10px;
+}
+
+.wf-flex div {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #666;
+}
