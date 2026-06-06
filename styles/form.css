@@ -1,0 +1,170 @@
+/* Modern Reset and Typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f6;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #4a0e2e;
+    /* Dark plum matching the assignment example image */
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Main Layout & Form Container */
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+form {
+    background-color: #d3d3d3;
+    /* Light grey background matching example screenshot */
+    border-radius: 4px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Groups & Structural Layout */
+.form-group {
+    margin-bottom: 1.5rem;
+    border: none;
+    padding: 0;
+}
+
+/* Labels and Legends */
+label,
+legend {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+}
+
+legend em,
+label span {
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: #444444;
+}
+
+/* Form Elements (Inputs, Select, Textarea) */
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #b5b5b5;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #ffffff;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid #4a0e2e;
+    outline-offset: 2px;
+}
+
+/* Radio buttons & Checkbox Container Lists */
+.rating-container,
+.checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    background-color: transparent;
+    padding: 0.25rem 0;
+}
+
+.rating-container label,
+.checkbox-container label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: normal;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+/* Enhancing Touch Targets for inputs */
+input[type="radio"],
+input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+/* Form Submit Button */
+input[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    background-color: #e0e0e0;
+    color: #000000;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    margin-top: 0.5rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #4a0e2e;
+    color: #ffffff;
+    border-color: #4a0e2e;
+}
+
+/* Footer Design */
+footer {
+    background-color: #4a0e2e;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin-bottom: 0.4rem;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
+}
+
+/* Desktop Responsiveness Adjustment */
+@media (min-width: 650px) {
+    main {
+        padding: 0;
+    }
+
+    form {
+        padding: 2.5rem;
+    }
+}
