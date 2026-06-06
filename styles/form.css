@@ -96,19 +96,17 @@ textarea:focus {
 .checkbox-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.25rem;
-    background-color: transparent;
-    padding: 0.25rem 0;
+    gap: 0.5rem 1.25rem;
+    /* Adds a bit of spacing between inputs and labels */
+    align-items: center;
 }
 
 .rating-container label,
 .checkbox-container label {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
     font-weight: normal;
     cursor: pointer;
     margin-bottom: 0;
+    display: inline-block;
 }
 
 /* Enhancing Touch Targets for inputs */
