@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore hiking trails with EcoTrails Explorer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrails Explorer | Explore Trails</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/trails.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>EcoTrails Explorer</h1>
+    </div>
+
+    <button id="menu-btn">☰</button>
+
+    <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="join.html">Join Cleanup</a>
+        <a href="references.html">References</a>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        <h2>Explore Trails</h2>
+
+        <p>
+            Use the filters below to find trails that match your hiking experience and goals.
+        </p>
+    </section>
+
+    <section class="filters">
+
+        <h3>Filter by Difficulty</h3>
+
+        <select id="difficulty">
+            <option value="all">All Trails</option>
+            <option value="Easy">Easy</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Hard">Hard</option>
+        </select>
+
+    </section>
+
+    <section>
+        <div id="trail-container" class="trail-grid"></div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 EcoTrails Explorer</p>
+    <p><a href="references.html">References</a></p>
+    <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
