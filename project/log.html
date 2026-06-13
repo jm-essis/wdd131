@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Trail Log | EcoTrails Explorer</title>
+    <meta name="description" content="Keep track of all the eco-friendly trails you complete this season.">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/log.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <span class="logo">🌲 EcoTrails Explorer</span>
+            <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+            <nav id="main-nav">
+                <a href="index.html">Explore</a>
+                <a href="join.html">Join Cleanup</a>
+                <a href="log.html" class="active">Trail Log</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="log-main">
+        <section class="log-intro">
+            <h2>Track Your Summer Milestones</h2>
+            <p>Log your completed hikes here. Your personal log saves automatically via browser storage!</p>
+        </section>
+
+        <section class="log-interface">
+            <div class="log-form-wrapper">
+                <h3>Record a Completed Trail</h3>
+                <form id="trail-log-form">
+                    <label for="log-name">Trail Name</label>
+                    <input type="text" id="log-name" required placeholder="e.g., Whispering Pines Loop">
+                    
+                    <label for="log-distance">Distance (miles)</label>
+                    <input type="number" id="log-distance" step="0.1" min="0.1" required placeholder="e.g., 2.5">
+                    
+                    <button type="submit" class="add-log-btn">Add to My Log</button>
+                </form>
+            </div>
+
+            <div class="log-display-wrapper">
+                <h3>Completed Hikes Dashboard</h3>
+                <div id="log-output">
+                    </div>
+                <button id="clear-log-btn" class="clear-btn">Reset All Data</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> EcoTrails Explorer | Jean Marc Essis</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+        <p><a href="references.html">References Page</a></p>
+    </footer>
+</body>
+</html>

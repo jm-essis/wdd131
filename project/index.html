@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrails Explorer | Discover Responsible Hiking</title>
+    <meta name="description" content="Discover regional eco-friendly hiking trails, filter by difficulty, and practice Leave No Trace ethics.">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/explore.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <span class="logo">🌲 EcoTrails Explorer</span>
+            <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+            <nav id="main-nav">
+                <a href="index.html" class="active">Explore</a>
+                <a href="join.html">Join Cleanup</a>
+                <a href="log.html">Trail Log</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Find Your Next Eco-Friendly Path</h1>
+            <p>Explore beautiful trails while protecting the great outdoors.</p>
+        </section>
+
+        <section class="explore-section">
+            <aside class="filters">
+                <h3>Filter Trails</h3>
+                <button class="filter-btn active" data-difficulty="all">All Trails</button>
+                <button class="filter-btn" data-difficulty="Easy">Easy (< 3 miles)</button>
+                <button class="filter-btn" data-difficulty="Moderate">Moderate</button>
+                <button class="filter-btn" data-difficulty="Hard">Hard</button>
+            </aside>
+
+            <div class="trail-grid-container">
+                <h2>Featured Trails</h2>
+                <div id="trail-grid" class="trail-grid">
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> EcoTrails Explorer | Jean Marc Essis</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+        <p><a href="references.html">References Page</a></p>
+    </footer>
+</body>
+</html>
